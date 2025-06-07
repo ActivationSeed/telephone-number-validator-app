@@ -1,0 +1,85 @@
+:root {
+  --primary-color: #4B5B6E;
+  --primary-color-lite: #AAB2BB;
+  --primary-color-dark: #19212a;
+  --complement-color: #F0B825;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Courier New", sans-serif;
+  background-color: var(--primary-color);
+  color: var(--primary-color-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#container {
+  max-width: 450px;
+  width: 95%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.app-box {
+  background-color: var(--primary-color-lite);
+  border: 2px solid var(--primary-color-dark);
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+h1 {
+  color: var(--complement-color);
+  text-align: center;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+h2, #results-div {
+  font-size: 1.2rem;
+  font-weight: bold;
+  max-width: 100%;
+}
+
+#results-div {
+  min-height: 1.5rem;
+}
+
+button, input {
+  border-radius: .5rem;
+  width: 100%;
+  max-width: 250px;
+  padding: .5rem 1rem;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  font: inherit;
+}
+
+button:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+button:active {
+  color: var(--complement-color);
+}
